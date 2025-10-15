@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # lunchify
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Lunchify-Flutter-App
+Lunchify
+>>>>>>> 973e0db6745a031a5ce6c899d738b43d309c2681
