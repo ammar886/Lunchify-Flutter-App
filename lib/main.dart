@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:lunchify/createTeam.dart';
 import 'package:lunchify/dashboard.dart';
 import 'package:lunchify/profileSetup.dart';
 import 'package:lunchify/signIn.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
           statusBarIconBrightness: Brightness.dark,
           systemNavigationBarColor: Colors.white,
         ),
-        child: Dashboard(),
+        child: SignIn(),
       ),
     );
   }

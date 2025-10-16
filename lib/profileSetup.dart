@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lunchify/dashboard.dart';
 
 class ProfileSetup extends StatelessWidget {
   const ProfileSetup({super.key});
@@ -125,7 +126,14 @@ class ProfileSetup extends StatelessWidget {
                 child: SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Dashboard(),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                     ),

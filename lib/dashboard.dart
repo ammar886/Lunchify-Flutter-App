@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lunchify/createTeam.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -64,7 +65,12 @@ class Dashboard extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(elevation: 0),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const CreateTeam()),
+                  );
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 12,
@@ -179,9 +185,300 @@ class Dashboard extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 12),
+              Text(
+                "Pending Bills",
+                style: TextStyle(
+                  fontFamily: 'Inter',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: Column(
+                    spacing: 12,
+                    children: [
+                      Row(
+                        spacing: 18,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundImage: AssetImage(
+                              'assets/images/avatar.png',
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                'Ahmed Ali',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text(
+                                'Team FF',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: Text(
+                              "RS 420",
+                              style: TextStyle(
+                                fontFamily: 'Inter',
+                                fontSize: 18,
+                                color: Color(0xFF9195E8),
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.end,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        "Lunch at 'The Corner Cafe' for the weekly sync-up",
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.black,
+                        ),
+                      ),
+
+                      Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Text(
+                            'Mark as Paid',
+                            style: TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: Column(
+                    spacing: 12,
+                    children: [
+                      Row(
+                        spacing: 18,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundImage: AssetImage(
+                              'assets/images/avatar.png',
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                'Ammar Khalid',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text(
+                                'Team FF',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: Text(
+                              "RS 420",
+                              style: TextStyle(
+                                fontFamily: 'Inter',
+                                fontSize: 18,
+                                color: Color(0xFF9195E8),
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.end,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        "Lunch at 'The Corner Cafe' for the weekly sync-up",
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.black,
+                        ),
+                      ),
+
+                      Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Text(
+                            'Mark as Paid',
+                            style: TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: Column(
+                    spacing: 12,
+                    children: [
+                      Row(
+                        spacing: 18,
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundImage: AssetImage(
+                              'assets/images/avatar.png',
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                'Asim Suhail',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text(
+                                'Team FF',
+                                style: TextStyle(
+                                  fontFamily: 'Inter',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: Text(
+                              "RS 820",
+                              style: TextStyle(
+                                fontFamily: 'Inter',
+                                fontSize: 18,
+                                color: Color(0xFF9195E8),
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.end,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        "Lunch at 'The Corner Cafe' for the weekly sync-up",
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.black,
+                        ),
+                      ),
+
+                      Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Text(
+                            'Mark as Paid',
+                            style: TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+        child: Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.black,
+        showUnselectedLabels: true,
+        selectedItemColor: Colors.green,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.receipt), label: 'Bills'),
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: 'Teams'),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
       ),
     );
   }
